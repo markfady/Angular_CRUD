@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'pm-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  template: `<div> {{pageTitle}}</div>`,
 })
 export class AppComponent {
-  title = 'Angular_CRUD';
+  pageTitle: string = 'Angular Getting Started';
 }
