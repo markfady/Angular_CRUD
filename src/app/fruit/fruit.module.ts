@@ -17,6 +17,7 @@ import { EditComponent } from './edit/edit.component';
     RouterModule.forRoot([
       { path: 'fruit/home', component: HomeComponent },
       { path: 'fruit',redirectTo: 'fruit/home', pathMatch: 'full' },
+      { path: 'fruit/create',component:CreateComponent },
       { path: '', redirectTo: 'fruit/home', pathMatch: 'full' } // Redirect to 'fruit' for the default route
     ])
   ]
