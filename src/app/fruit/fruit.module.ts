@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router'; // Import RouterModule here
 import { HomeComponent } from './home/home.component';
 import { CreateComponent } from './create/create.component';
 import { EditComponent } from './edit/edit.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { EditComponent } from './edit/edit.component';
   ],
   imports: [
     CommonModule,
+    FormsModule,
     RouterModule.forRoot([
       { path: 'fruit/home', component: HomeComponent },
       { path: 'fruit',redirectTo: 'fruit/home', pathMatch: 'full' },
