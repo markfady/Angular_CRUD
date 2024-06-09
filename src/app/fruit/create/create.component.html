@@ -1,1 +1,19 @@
-<p>create works!</p>
+
+<div class="container">
+    <legend>Create Item</legend>
+    <form>
+        <div class="mb-3">
+            <label for="name">Name</label>
+            <input type="text" name="name" class="form-control" id="name" [(ngModel)]="formdata.name" >
+        </div>
+        <div class="mb-3">
+            <label for="quantity">Quantity</label>
+            <input type="number" name="quantity" class="form-control" id="quantity"  [(ngModel)]="formdata.quantity" >
+        </div>
+        <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input type="number" name="price" class="form-control" id="price"  [(ngModel)]="formdata.price" >
+        </div>
+        <button type="submit" (click)="create()" class="btn btn-primary">Submit</button>
+    </form>
+</div>
