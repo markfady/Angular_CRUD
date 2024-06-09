@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './fruit/home/home.component';
 import { CommonModule } from '@angular/common';
+import { FruitModule } from './fruit/fruit.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,8 @@ import { CommonModule } from '@angular/common';
     CommonModule,
     ReactiveFormsModule,
     RouterModule,
+    FruitModule,
+ 
   ],
   bootstrap: [AppComponent]
 })
