@@ -16,5 +16,11 @@ export class FruitService {
     create(data:Fruit){
       return this.http.post<Fruit[]>('http://localhost:3000/fruits',data)
     }
-   
+   getDataWithId(id:number){
+    return this.http.get<Fruit>(`http://localhost:3000/fruits/${id}`)
+   }
+   edit(data:Fruit){
+    return this.http.put<Fruit>(`http://localhost:3000/fruits/${data.id}`,data)
+
+   }
 }
