@@ -8,9 +8,9 @@
     },
     {
       "id": 2,
-      "name": "Banana",
-      "quantity": 100,
-      "price": 0.59
+      "name": "BananaEditedName",
+      "quantity": 102,
+      "price": 0.6
     },
     {
       "id": 3,
