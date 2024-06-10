@@ -21,6 +21,8 @@ export class FruitService {
    }
    edit(data:Fruit){
     return this.http.put<Fruit>(`http://localhost:3000/fruits/${data.id}`,data)
-
+   }
+   deleteItem(id:number){
+    return this.http.delete<Fruit> (`http://localhost:3000/fruits/${id}`)
    }
 }
