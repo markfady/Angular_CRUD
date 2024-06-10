@@ -20,6 +20,7 @@ import { FormsModule } from '@angular/forms';
       { path: 'fruit/home', component: HomeComponent },
       { path: 'fruit',redirectTo: 'fruit/home', pathMatch: 'full' },
       { path: 'fruit/create',component:CreateComponent },
+      { path: 'fruit/edit/:id',component:EditComponent },
       { path: '', redirectTo: 'fruit/home', pathMatch: 'full' } // Redirect to 'fruit' for the default route
     ])
   ]
