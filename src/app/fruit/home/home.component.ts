@@ -18,4 +18,11 @@ export class HomeComponent implements OnInit {
       this.allFruits=data
     })
   }
+  deleteItem(id:number){
+    this.fruitService.deleteItem(id).subscribe({
+      next:(data)=>{
+        this.allFruits=this.allFruits.filter(el=>el.id!=id)
+      }
+    })
+  }
 }
