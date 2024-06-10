@@ -1,1 +1,19 @@
-<p>edit works!</p>
+
+<div class="container">
+    <legend>Edit Item</legend>
+    <form >
+        <div class="mb-3">
+            <label for="name">Name</label>
+            <input type="text" name="name" [(ngModel)]="fruitData.name" class="form-control" id="name"  >
+        </div>
+        <div class="mb-3">
+            <label for="quantity">Quantity</label>
+            <input type="number" name="quantity" [(ngModel)]="fruitData.quantity" class="form-control" id="quantity"  >
+        </div>
+        <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input type="number" name="price" [(ngModel)]="fruitData.price" class="form-control" id="price"  >
+        </div>
+        <button type="submit" (click)="update()"  class="btn btn-primary">Update</button>
+    </form>
+</div>
